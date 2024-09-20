@@ -68,6 +68,31 @@ namespace console
                 Console.WriteLine();
             }
             Console.ReadLine();
+
+
+            int starNo;
+            Console.WriteLine("Write Pyramid Side:");
+            starNo = Convert.ToInt32(Console.ReadLine());
+            int space = starNo - 1;
+
+            for (int i = 1; i <= starNo; i++)
+            {
+             
+                for (int j = 1; j <= space; j++)
+                {
+                    Console.Write("  ");
+                }
+
+                for (int k = 1; k <= (2 * i - 1); k++)
+                {
+                    Console.Write("* ");
+                }
+
+                Console.WriteLine();
+                space--;
+            }
+
+            Console.ReadLine();
         }
 
     }
