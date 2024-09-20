@@ -28,6 +28,25 @@ namespace console
 
 
 
+            //Inverted Triangle 
+            int aa;
+            int bb;
+            int cNum;
+            Console.WriteLine("Write side, ");
+            cNum = Convert.ToInt32(Console.ReadLine());
+
+            for (aa = cNum; aa >= 1; aa--)
+            {
+                for (bb = 1; bb <= aa; bb++)
+                {
+                    Console.Write(" * ");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+
+
+
             //Square Pattern Printing Code
             int a;
             int b;
@@ -69,7 +88,7 @@ namespace console
             }
             Console.ReadLine();
 
-
+            //Pyramid Programming
             int starNo;
             Console.WriteLine("Write Pyramid Side:");
             starNo = Convert.ToInt32(Console.ReadLine());
@@ -77,7 +96,7 @@ namespace console
 
             for (int i = 1; i <= starNo; i++)
             {
-             
+
                 for (int j = 1; j <= space; j++)
                 {
                     Console.Write("  ");
@@ -93,6 +112,9 @@ namespace console
             }
 
             Console.ReadLine();
+
+
+
         }
 
     }
